@@ -16,6 +16,13 @@ view: parks {
     sql: ${TABLE}.Longitude ;;
   }
 
+  dimension: location {
+    type: location
+    sql_latitude: ${latitude} ;;
+    sql_longitude: ${longitude} ;;
+
+  }
+
   dimension: park_code {
     type: string
     sql: ${TABLE}.Park_Code ;;
